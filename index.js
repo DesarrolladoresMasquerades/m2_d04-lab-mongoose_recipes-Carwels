@@ -56,7 +56,7 @@ Recipe.findOneAndUpdate(
 ).then((recipe) => console.log(`update ${recipe.title}`));
 
 Recipe.deleteOne({ title: "Carrot Cake" })
-  .then((del) => console.log("Carrot Coke is no longer available"))
+  .then((del) => console.log("Carrot Coke deleted"))
   .catch((error) => console.log(error));
 
  mongoose.connection.close()
